@@ -74,6 +74,95 @@ body {
 }
 
 
-.course-curator .text {
+/* .course-curator .text {
   margin-bottom: 40px;
+} */
+
+
+.course-curator {
+  margin-bottom: 100px;
+}
+
+
+.navigation {
+  background-color: #cdd0d6;
+  padding: 15px 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.hw-nav .item {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5;
+
+  color: #1E212C;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.hw-nav .item:hover {
+  color: #2196f3
+}
+
+.examples .title {
+  text-transform: uppercase;
+}
+
+.examples .lower {
+  text-transform: lowercase;
+  margin-right: 15px;
+}
+
+.hover:hover {
+  background-color: #000;
+  color: tomato;
+
+}
+
+.hover .vis-opa {
+  background-color: #7A956B;
+  color: #fff;
+  padding: 15px;
+}
+
+.vis-opa {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hover:hover .vis-opa {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hover {
+  outline: 1px solid #1E212C;
+  margin-bottom: 45px;
+
+}
+
+
+.link {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.link:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+.link:active {
+  color: red;
+}
+
+.active {
+  margin-bottom: 100px;
+}
+
+
+.visited .link:visited {
+  color: red;
 }
