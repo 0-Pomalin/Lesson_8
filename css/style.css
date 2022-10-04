@@ -34,10 +34,13 @@ body {
 }
 
 .you-learn li {
-  margin-bottom: 4px;
   padding-left: 32px;
 
   background: url(../img/icons/check.svg) 0 6px no-repeat;
+}
+
+.you-learn li:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 .about-course {
@@ -69,7 +72,7 @@ body {
   margin-bottom: 32px;
 }
 
-.course-curator li {
+.course-curator li:not(:last-child) {
   margin-bottom: 4px;
 }
 
@@ -80,6 +83,8 @@ body {
 .course-curator {
   margin-bottom: 100px;
 }
+
+/* Pseudo-classes */
 
 .navigation {
   background-color: #cdd0d6;
@@ -92,14 +97,22 @@ body {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.5;
-
   color: #1e212c;
-  display: inline-block;
+  /* display: inline-block; */
   margin-right: 50px;
 }
 
 .hw-nav .item:hover {
   color: #2196f3;
+}
+.examples-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: tomato;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .examples .title {
@@ -145,6 +158,10 @@ ul li:hover ul {
   display: block;
 }
 
+/* ul p:hover + ul {
+  display: block;
+} */
+
 .link {
   font-weight: 700;
   font-size: 28px;
@@ -159,11 +176,68 @@ ul li:hover ul {
 .link:active {
   color: red;
 }
-
-.active {
+div[id] {
   margin-bottom: 100px;
 }
 
 .visited .link:visited {
   color: red;
 }
+
+.focus .link:focus {
+  outline: 10px solid red;
+}
+
+.block {
+  background-color: #1cc27d;
+  color: #fff;
+  padding: 15px;
+  display: none;
+}
+
+.block:target {
+  display: block;
+}
+
+.examples-text {
+  background-color: #34885d;
+  padding: 15px;
+  color: #fff;
+  line-height: 120%;
+}
+
+.examples-text p {
+  margin-bottom: 15px;
+}
+
+.first-child p:first-child {
+  color: red;
+  text-transform: uppercase;
+}
+
+.first-child p:last-child {
+  color: red;
+  text-transform: uppercase;
+}
+
+.first-of-type p:first-of-type {
+  color: red;
+  text-transform: uppercase;
+}
+
+.first-of-type p:last-of-type {
+  color: red;
+  text-transform: uppercase;
+}
+
+/* .nth-child p:nth-child(3) {
+  background-color: rgb(93, 34, 189);
+} */
+
+.nth-child p:nth-child(odd) {
+  background-color: rgb(93, 34, 189);
+}
+
+/* .nth-child p:nth-child(even) {
+  background-color: rgb(93, 34, 189);
+} */

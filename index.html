@@ -72,14 +72,26 @@
           <nav class="hw-nav">
             <ul class="list">
               <li class="item">
-                <p>Псевдо класи</p>
+                <p>Псевдо-класи стану</p>
                 <ul>
-                  <li><a href="#hover">Hover</a></li>
-                  <li><a href="#active">Active</a></li>
-                  <li><a href="#visited">Visited</a></li>
+                  <li><a href="#hover">:hover</a></li>
+                  <li><a href="#active">:active</a></li>
+                  <li><a href="#visited">:visited</a></li>
+                  <li><a href="#focus">:focus</a></li>
+                  <li><a href="#target">:target</a></li>
                 </ul>
               </li>
-              <li class="item">Псевдо елементи</li>
+              <li class="item">
+                <p>Псевдо-класи положення в коді</p>
+                <ul>
+                  <li><a href="#first-child">:first-child, :last-child</a></li>
+                  <li>
+                    <a href="#first-of-type">:first-of-type, :last-of-type</a>
+                  </li>
+                  <li><a href="#nth-child">:nth-child</a></li>
+                  <li><a href="#not">:not</a></li>
+                </ul>
+              </li>
               <li class="item">Game</li>
             </ul>
           </nav>
@@ -87,8 +99,10 @@
       </section>
       <section class="examples">
         <div class="container">
+          <h2 class="examples-title">Псевдо-класи стану</h2>
+
           <div id="hover" class="hover">
-            <h2 class="title"><span class="lower">Псевдоклас:</span>Hover</h2>
+            <h2 class="title"><span class="lower">Псевдо-клас:</span>Hover</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit
               eligendi odio similique alias perspiciatis hic? Quo ab non veniam
@@ -103,12 +117,13 @@
             </p>
           </div>
           <div id="active" class="active">
-            <h2 class="title"><span class="lower">Псевдоклас:</span>Active</h2>
+            <h2 class="title"><span class="lower">Псевдо-клас:</span>Active</h2>
             <a href="" class="link">я посилання(натисни і тримай)</a>
           </div>
-
           <div id="visited" class="visited">
-            <h2 class="title"><span class="lower">Псевдоклас:</span>Visited</h2>
+            <h2 class="title">
+              <span class="lower">Псевдо-клас:</span>Visited
+            </h2>
             <ul>
               <li>
                 <a target="_blank" href="https://google.ua" class="link">
@@ -127,6 +142,160 @@
               </li>
             </ul>
           </div>
+          <div id="focus" class="focus">
+            <h2 class="title"><span class="lower">Псевдо-клас:</span>Focus</h2>
+            <a href="" class="link">я посилання(натисни TAB)</a>
+          </div>
+          <div id="target" class="target">
+            <h2 class="title"><span class="lower">Псевдо-клас:</span>Target</h2>
+            <a href="#block" class="link">Я посилання, натисни мене</a>
+            <div id="block" class="block">
+              <div class="block-item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                at, excepturi, saepe alias, expedita ex sunt vitae modi ab nihil
+                voluptate! Voluptatibus id, praesentium quis magnam temporibus
+                est officiis consequuntur?
+              </div>
+            </div>
+          </div>
+
+          <h2 class="examples-title">Псевдо-класи положення в коді</h2>
+
+          <h2 class="title">
+            <span class="lower">Псевдо-клас:</span>First-child, Last-child
+          </h2>
+          <div id="first-child" class="first-child">
+            <div class="examples-text">
+              <p>
+                #1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #2 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #3 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #4 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="title">
+            <span class="lower">Псевдо-клас:</span>First-of-type
+          </h2>
+          <div id="first-of-type" class="first-of-type">
+            <div class="examples-text">
+              <div class="examples-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore at tempore velit similique repellendus ea quibusdam
+                accusantium, qui officiis. Adipisci, facilis perspiciatis
+                corporis quas libero nostrum sit repellendus sint perferendis!
+              </div>
+              <p>
+                #1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #2 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #3 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #4 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <div class="examples-block">
+                123 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem, praesentium. Dolores, ullam. Maiores alias qui nemo
+                expedita numquam rerum amet, perferendis at illum architecto
+                illo commodi provident id vitae fugit.
+              </div>
+            </div>
+          </div>
+
+          <h2 class="title">
+            <span class="lower">Псевдо-клас:</span>nth-child
+          </h2>
+          <div id="nth-child" class="nth-child">
+            <div class="examples-text">
+              <p>
+                #1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #2 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #3 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #4 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+              <p>
+                #1 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia eveniet, praesentium fugiat eius quis, perspiciatis
+                consequuntur necessitatibus, beatae iusto aspernatur fuga
+                repellendus! Veniam aut commodi a blanditiis, aspernatur quos
+                reprehenderit.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="title"><span class="lower">Псевдо-клас:</span>not</h2>
         </div>
       </section>
     </main>
