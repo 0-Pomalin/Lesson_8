@@ -405,7 +405,110 @@ div[id] {
 /* ---------------   Game ----------------------- */
 
 .game-container {
-  max-width: 810px;
+  max-width: 830px;
   background-color: #1bd0dd;
   margin: 0 auto;
+  padding: 15px;
+}
+
+.game-start,
+.game-line1,
+.game-line2,
+.game-line3,
+.game-line4,
+.game-line5,
+.game-line6,
+.game-line7,
+.game-finish {
+  background-color: tomato;
+}
+
+.game-start {
+  height: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 750px;
+  padding-top: 15px;
+}
+
+.game-line1 {
+  height: 50px;
+  margin-right: 350px;
+}
+
+.game-line2 {
+  height: 40px;
+  margin-left: 400px;
+}
+
+.game-line3 {
+  height: 150px;
+  margin-left: 770px;
+}
+
+.game-line4 {
+  height: 20px;
+  margin-left: 250px;
+}
+
+.game-line5 {
+  height: 120px;
+  margin-left: 250px;
+  margin-right: 535px;
+}
+
+.game-line6 {
+  height: 5px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.game-line7 {
+  height: 55px;
+  margin-left: 545px;
+  margin-right: 250px;
+}
+
+.game-finish {
+  height: 50px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  margin-left: 522px;
+  margin-right: 228px;
+  padding-top: 15px;
+}
+
+.game-container div:not(:first-child) {
+  visibility: hidden;
+}
+
+.game-container div:hover + div,
+.game-container div:hover {
+  visibility: visible;
+}
+
+.up-arrow {
+  background-color: #cdd0d6;
+  display: block;
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+}
+
+.up-arrow::before {
+  content: '\1F845';
+  color: blue;
+  font-size: 46px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.up-arrow::after {
+  content: '\1F845';
+  color: yellow;
+  font-size: 46px;
+  display: inline-block;
+  margin-left: 15px;
 }
