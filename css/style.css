@@ -68,6 +68,33 @@ body {
   margin-bottom: 32px;
 }
 
+.course-curator li:nth-child(1)::before {
+  content: '';
+  background: url('../img/icons/star-rate.svg') 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.course-curator li:nth-child(2)::before {
+  content: '';
+  background: url('../img/icons/play-courses.svg') 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.course-curator li:nth-child(3)::before {
+  content: '';
+  background: url('../img/icons/profile-students.svg') 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .course-curator ul {
   margin-bottom: 32px;
 }
@@ -84,7 +111,7 @@ body {
   margin-bottom: 100px;
 }
 
-/* Pseudo-classes */
+/* --------------- Pseudo-classes ------------------ */
 
 .navigation {
   background-color: #cdd0d6;
@@ -120,8 +147,12 @@ body {
 }
 
 .examples .lower {
-  text-transform: lowercase;
+  margin-left: 15px;
   margin-right: 15px;
+}
+
+.lower {
+  text-transform: lowercase;
 }
 
 .hover:hover {
@@ -206,9 +237,9 @@ div[id] {
   line-height: 120%;
 }
 
-.examples-text p {
+/* .examples-text p {
   margin-bottom: 15px;
-}
+} */
 
 .first-child p:first-child {
   color: red;
@@ -241,3 +272,140 @@ div[id] {
 /* .nth-child p:nth-child(even) {
   background-color: rgb(93, 34, 189);
 } */
+
+.not .examples-text {
+  outline: 2px solid blue;
+}
+
+.not .examples-text p {
+  outline: 1px solid tomato;
+}
+
+.examples-text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.before-after .tag-span {
+  outline: 1px solid tomato;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.before-after .tag-div {
+  outline: 1px solid tomato;
+  margin-bottom: 10px;
+}
+
+.before-after .tag-span::before {
+  content: '(***';
+}
+
+.before-after .tag-div::before {
+  content: '(***';
+}
+
+.before-after .tag-span::after {
+  content: '***)';
+}
+
+.before-after .tag-div::after {
+  content: '***)';
+}
+
+.before-after .text {
+  outline: 1px solid tomato;
+  margin-bottom: 10px;
+}
+
+.before-after .text::before {
+  content: '***)';
+}
+
+.before-after .text::after {
+  content: '***)';
+}
+
+.examples-text .text {
+  margin-bottom: 50px;
+}
+
+.before-after ul {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.before-after ul li:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.before-after ul li::before {
+  content: '';
+  background: url(../img/icons/check.svg) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 0.8s ease 0s;
+}
+
+.before-after ul li:hover::before {
+  transform: scale(1.5);
+}
+
+.before-after ul li::after {
+  content: '';
+  background: url(../img/icons/check.svg) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  margin-left: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.before-after ul li:hover::after {
+  transform: rotate(-180deg);
+}
+
+.hw-nav ul p::before {
+  content: '';
+  background: url(../img/icons/check.svg) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 0.8s ease 0s;
+}
+
+.hw-nav ul p:hover::before {
+  transform: scale(1.5);
+}
+
+.before-after ol {
+  text-align: center;
+  counter-reset: item;
+}
+
+.before-after ol li::before {
+  counter-increment: item;
+  content: counter(item) '. ';
+  color: blue;
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.before-after ol li:hover::before {
+  transform: rotate(-360deg);
+}
+
+.before-after ol li:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+/* ---------------   Game ----------------------- */
+
+.game-container {
+  max-width: 810px;
+  background-color: #1bd0dd;
+  margin: 0 auto;
+}
